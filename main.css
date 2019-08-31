@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
 	text-align: center;
-	background: url("bloodBackground.png");
+	background: url("background.jpg");
 	padding: 56px;
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
@@ -16,36 +15,52 @@ h1{
 	color: black;
 	padding: 20px;
 }
-button{
-	padding: 10px;
-	color: white;
-	background: red;
-	padding: 10px;
-	margin: 20px;
-	border-radius: 10px;
-	font-size: 16px;
-}
 input{
 	border:3px solid black;
 	padding: 5px;
 	font-size:16px;
   }
-div{
-	align-items: left;
-}
-label{
-	text-align: left;
-}
-#map {
-  height: 500px;
-  margin: 10px auto;
-  width: 800px;
-}
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
 
-    text-decoration: none;
-    color: initial;
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #9B3722;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #red;}
