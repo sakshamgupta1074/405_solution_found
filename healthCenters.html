@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="navbar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 <body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"> HOME </a>
+  <a href="data.html"> DATA </a>
+  <a href="facts.html"> FACTS </a>
+  <a href="healthCenters.html"> HEALTH CENTERS </a>
+  <a href="contacts.html"> CONTACTS </a>
+  <a href="about.html"> ABOUT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+
+
     <img src="bloodIcon.png" style="max-width:100%;height:auto;">
 
     <h1>Health Center Finder</h1>
@@ -21,10 +39,12 @@
     <a href="chandigarh_map.html" class="button">Chandigarh</a>
 -->
 
+
+
 <div class="dropdown" style="float:center;">
   <button class="dropbtn">Try searching hospitals for following cities</button>
   
-  <div class="dropdown-content">
+  <div class="dropdown-content" text-align = "center">
     <center>
     <a href="patiala_map.html">Patiala</a>
     <a href="amritsar_map.html">Amritsar</a>
