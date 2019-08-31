@@ -1,0 +1,33 @@
+.column {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img.resize{
+	width: 200px;
+	height: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+body {
+	text-align: center;
+	background: url("backgroundpics.jpg");
+	padding: 56px;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	background-size: cover;
+}
