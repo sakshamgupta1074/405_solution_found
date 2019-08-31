@@ -3,21 +3,27 @@
     <title>Flask Intro - login page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="login.css">
   </head>
   <body>
+    
+<form action="" method="post">
     <div class="container">
-      <h1>Please login</h1>
-      <br>
-      <form action="" method="post">
-        <input type="text" placeholder="Username" name="username" value="{{
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required value="{{
           request.form.username }}">
-         <input type="password" placeholder="Password" name="password" value="{{
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required value="{{
           request.form.password }}">
-        <input class="btn btn-default" type="submit" value="Login">
-      </form>
-      {% if error %}
+          
+    <input class="btn btn-default" type="submit" value="Login">
+    {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}
-      {% endif %}
-    </div>
+    {% endif %}
+  </div>
+  </form>
+
+</form>
   </body>
 </html>
