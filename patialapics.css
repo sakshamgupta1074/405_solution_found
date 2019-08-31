@@ -1,6 +1,6 @@
 .column {
   float: left;
-  width: 40%;
+  width: 46%;
   padding: 20px;
 }
 
@@ -9,11 +9,17 @@
   content: "";
   clear: both;
   display: table;
+  align
 }
 
 img.resize{
 	width: 200px;
 	height: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -30,4 +36,12 @@ body {
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 	background-size: cover;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
