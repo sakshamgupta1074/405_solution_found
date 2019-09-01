@@ -1,0 +1,338 @@
+*
+html { font-size:100%; }
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+img { max-width: 100%; height: auto; }
+body
+{
+    font-family: monospace;
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}}
+
+.main-nav
+{
+    float:right;
+    list-style: none;
+    margin-top: 30px;
+     margin-left:70px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li.active a
+{
+    border: 3px solid white;
+    
+}
+
+.main-nav li a:hover
+{
+    border: 4px solid white;
+}
+
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+}
+
+
+
+
+h1
+{
+    color:black;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+    
+}
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pic1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.button
+{
+    margin-top: 30px;
+    margin-left: 440px;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.btn-one
+{
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.btn-two:hover
+{
+    background-color: darkorange;
+    transition: all 0.5s ease-in;
+    
+        
+}
+
+.logo img
+{
+    width: 180px;
+    height: auto;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: right;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.vertical-menu {
+  width: 200px; 
+}
+
+.vertical-menu a {
+  background-color: #eee; 
+  color: black; 
+  display: block;
+  padding: 12px; /
+  text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; 
+  color: white;
+}
+.text{
+  position: relative;
+  text-align: center;
+  font-size: 50;
+  color:    #FDFEFE;
+  font:Copperplate Gothic Bold;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottom-right {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav button {
+  float: left;
+  display: block;
+  color: #E83939;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.topnav .login-container {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+
+.topnav input[type=Password] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+
+/* Style the button inside the input container */
+.topnav .login-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background: #ccc;
+}
+.centered{
+  align-content: center;
+  float:center;
+}

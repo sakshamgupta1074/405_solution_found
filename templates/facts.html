@@ -1,0 +1,71 @@
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true"> 
+   <link href="/static/style.css" rel="stylesheet" type="text/css">
+   <script src="/static/navbar.js"></script>
+<head>
+	<link rel="shortcut icon" href="/static/favicon.ico"/>
+	<title>	
+		FACTS
+	</title>
+</head>
+<body>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav" id="myTopnav">
+  <a href={{url_for('index')}}>HOME</a>
+  <a href={{url_for('data')}}> DATA </a>
+  <a href={{url_for('facts')}}> FACTS </a>
+  <a href={{url_for('health')}}> HEALTH CENTERS </a>
+  <a href={{url_for('contact')}}> CONTACTS </a>
+  <a href={{url_for('about')}}> ABOUT US</a>
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+</div>
+			<center>
+				<div class="text">
+				
+			 <img src="/static/fact.jpg" alt="There's no tragedy in life like the death of a child. ..." style="width:1500px;height:800px;margin-top:50px">
+			 <div class="centered"><b><strong>There's no tragedy in life like the death of a child. ...</strong></b></div>
+			</div>
+<ul class="w3-ul w3-card-4" style="width:50%" font-size="70">
+<p f><b>KEY FACTS</b></p>
+<p>
+<img src="/static/ww.png"><li>In 1800 the health conditions of our ancestors were such that 43% of the world's newborns died before their 5th birthday. </li>
+</p>
+<p>
+<img src="/static/wq.png"><li>In 1970 child mortality was still 18.5%. Almost every 5th child born in that year died in childhood.</li>
+</p>
+<p>
+<img src="/static/kk.png"><li>From 1980 to 2017, death rates for infants fell from 1,288.3 per 100,000 to 567 per 100,000. Similar trends are evident for child and teen mortality. Death rates were highest among children under age 1, followed by children ages 15 to 19, 1 to 4, and 5 to 14.</li>
+</p>
+<p>
+<img src="/static/t.png">
+<li>An estimated 6.3 million children under the age of 15 years died in 2017. 5.4 million of them were under the age of 5 and 2.5 million of those children died within the first month of life. This translates into 15 000 under-five deaths per day.</li>
+</p>
+<p>
+<img src="/static/qq.png">
+<li>
+  The probability of dying among children aged 5 to 14 years was 7.2 deaths per 1 000 children aged 5 in 2017, roughly 18% of the under-5 mortality rate in 2017. About 2 500 children in this age group die every day. Globally deaths among children aged 5-9 accounted for 61% of all deaths of children aged 5 to 14 years.
+</li>
+</p>
+ </center>
+
+</ul>

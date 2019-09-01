@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORM</title>
+  </head>
+  <body background="#9B9797">
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<div>
+    <form action="/hello" method="post">
+ <b>NAME: </b> 
+  <input type="text" placeholder="NAME"><br>
+  <b>TOTAL NUMBER OF DEATHS TODAY: </b>
+  <input type="NUMBER" name="totdeath" placeholder="INPUT TOTAL DEATHS"><br>
+  <b>REASON OF DEATH: </b><br>
+  PNEUMONIA DEATHS: <input type="NUMBER" name="D1" value="0" placeholder="PNEUMONIA DEATHS"><br>
+  PREMATURITY DEATHS: <input type="NUMBER" name="D2"  value="0"  placeholder="PREMATURITY DEATHS"><br>
+  LOW BIRTH WEIGHT DEATHS: <input type="NUMBER" name="D3"   value="0" placeholder="LOW BIRTH WEIGHT DEATHS"><br>
+  DIARRHOEAL DEATHS: <input type="NUMBER" name="D4"  value="0"  placeholder="DIARRHOEAL DEATHS"><br>
+  NEONATAL INFECTIONS DEATHS: <input type="NUMBER" name="D5"  value="0"  placeholder="NEONATAL INFECTIONS DEATHS"><br>
+  BIRTH ASPHYXIA AND BIRTH TRAUMA DEATHS: <input type="NUMBER" name="D6"  value="0"  placeholder="BIRTH ASPHYXIA AND BIRTH TRAUMA DEATHS"><br>
+  DEATHS FROM OTHER DISEASES: <input type="NUMBER" name="D7" value="0" placeholder="DEATHS FROM OTHER DISEASES"><br>
+        <h3>Following are the codes for respective cities:</h3>
+        <p align="center">
+          PATIALA: PTA <br>
+          CHANDIGARH: CHD <br>
+          LUDHIANA: LUD <br>
+          JALANDHAR: BTI <br>
+          AMRITSAR: AMR 
+        </p>
+        <input type="text" name="city" placeholder="Enter City"><br>
+        <br>
+        SELECT CITY
+        <br>
+
+           <form action="/hello">
+  <button type="submit">MAKE CHANGES</button>
+  </form>
+     <form action="/data">
+  <button type="submit">SHOW CHANGES</button>
+  </form>
+</div>
+</body>
+</html>

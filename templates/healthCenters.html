@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>healthCentre</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/static/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/main.css">
+    <script src="/static/navbar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav" id="myTopnav">
+<a href={{url_for('index')}}>HOME</a>
+<a href={{url_for('data')}}> DATA </a>
+<a href={{url_for('facts')}}> FACTS </a>
+<a href={{url_for('health')}}> HEALTH CENTERS </a>
+<a href={{url_for('contact')}}> CONTACTS </a>
+<a href={{url_for('about')}}> ABOUT US</a>
+  <button onclick="goBack()">Go Back</button>
+</head>
+<body>
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+
+
+    <img src="/static/bloodIcon.png" style="max-width:100%;height:auto;">
+
+    <h1>Health Center Finder</h1>
+    <!--
+    <h2>Try searching hospitals for following cities:</h2>
+    <a href="patiala_map.html" class="button">Patiala</a>
+    <a href="amritsar_map.html" class="button">Amritsar</a>
+    <a href="ludhiana_map.html" class="button">Ludhiana</a>
+    <a href="jalandhar_map.html" class="button">Jalandhar</a>
+    <a href="chandigarh_map.html" class="button">Chandigarh</a>
+-->
+
+
+
+<div class="dropdown" style="float:center;">
+  <button class="dropbtn">Try searching hospitals for following cities</button>
+  
+  <div class="dropdown-content" text-align = "center">
+    <center>
+    <a href={{url_for('pmap')}}>Patiala</a>
+    <a href={{url_for('amap')}}>Amritsar</a>
+    <a href={{url_for('lmap')}}>Ludhiana</a>
+    <a href={{url_for('jmap')}}>Jalandhar</a>
+    <a href={{url_for('cmap')}}>Chandigarh</a>
+  </center>
+  </div>
+</div>
+</body>
+</html>

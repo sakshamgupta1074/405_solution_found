@@ -1,0 +1,86 @@
+<html>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "33ef21dd-2882-4620-a09c-b6b3a3634762",
+    });
+  });
+</script>
+<head>
+	<link rel="shortcut icon" href="/static/favicon.ico"/>
+    <title>childdeathratio</title>
+    <link href="/static/index.css" rel="stylesheet" type="text/css">
+    <script src="/static/navbar.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+
+ <header>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+
+  <a href={{url_for('index')}}>HOME</a>
+  <a href={{url_for('data')}}> DATA </a>
+  <a href={{url_for('facts')}}> FACTS </a>
+  <a href={{url_for('health')}}> HEALTH CENTERS </a>
+  <a href={{url_for('contact')}}> CONTACTS </a>
+  <a href={{url_for('about')}}> ABOUT US</a>
+
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+  <div class="login-container">
+    <form action="/login" method="POST">
+      
+<a href={{url_for('login')}}>Login</a>
+    </form>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    <img src="/static/final.jpg" alt="Child" style="width:1500px;height:600px;margin-top:50px">
+    <div class="parallax"></div>c
+    <div>
+<p><b><h1><br><br> Child mortality, also known as child death, refers to the death of children under the age of 14 and encompasses national mortality, under-5 mortality, and mortality of children aged 5–14.Many child deaths go unreported for a variety of reasons, including lack of death registration and lack of data on child migrants.Without accurate data on child deaths, we cannot fully discover and combat the greatest risks to a child's life.</h1></b></p>
+</div>
+<center>
+<div class="video-container" >
+	<iframe width="1120" height="630" src="https://www.youtube.com/embed/XpORYkR_CKo" frameborder="0" 
+  allow="accelerometer;autoplay;control="false"; encrypted-media; gyroscope; picture-in-picture;fullscreen"></iframe>
+</div>
+</center>
+</body>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:grey;
+   color: white;
+   text-align: center;
+     z-index: 2;
+}
+</style>
+
+<div class="footer">
+  <p>The greatest loss is the lost of life.</p>
+</div>
+
+</header>
+</html>
