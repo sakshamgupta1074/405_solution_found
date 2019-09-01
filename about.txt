@@ -1,0 +1,24 @@
+This is an dynamic website created using Flask an Python framework at backend.HTML and Javascript are powering the frontend of the website with CSS and Bootstrap helping the website to look attractive.
+This is a fully automatic secured website and security is  tested on SQL Injection.
+
+About the Devlopers
+
+Shiva Thavani
+BE - 3rd Year Coem student
+TIET,Patiala
+linkedinn ID :
+github:
+
+
+Saksham Gupta
+BE - 3rd Year Coem student
+TIET,Patiala
+linkedinn ID :
+github:
+
+
+Kritika Ahuja
+BE - 3rd Year Coem student
+TIET,Patiala
+linkedinn ID :
+github:
