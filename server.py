@@ -91,7 +91,7 @@ def hello():
     v7 = pickle.load(infile)
     infile = open('D88','rb')
     v8 = pickle.load(infile)
-    path='C:\\Users\\kritika ahuja\\Desktop\\final\\static\\'
+    path='C:\\Users\\kritika ahuja\\Desktop\\deploy\\static\\'
     colors = ['gold', 'mediumturquoise', 'darkorange', 'lightgreen','lightblue','red']
     labels = ['Pneumonia','Prematurity','Low birth weight','Dirrhoeal disease','Neontal infection','Birth Asphyxia & Birth Trauma','Other Disease']
     values = [55+int(v1), 98+int(v2), 23+int(v3), 64+int(v4),78+int(v5),55+int(v6),10+int(v7)]
@@ -113,8 +113,9 @@ def hello():
 
     districts=['Patiala', 'Ludhiana', 'Bhatinda','Amritsar','Chandigarh']
     fig = go.Figure([go.Bar(x=districts, y=[19,58,47,98,189])])
+    
     fig.write_image("Death.jpeg")
-    return 'Your data has been recorded :) <br/> <a href="/">Back Home</a>'
+    return 'Your data has been recorded :) <br/> <a href="/data">Back Home</a>'
 
 @app.route("/index")
 def index():
