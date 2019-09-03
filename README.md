@@ -8,6 +8,6 @@ This is an dynamic website created using Flask a Python framework at backend.HTM
 This is a fully automatic secured website and security is  tested on SQL Injection.
 
 About the Devlopers:
-Shiva Thavani
 Saksham Gupta
+Shiva Thavani
 Kritika Ahuja
